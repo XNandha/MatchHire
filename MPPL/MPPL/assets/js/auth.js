@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const form=document.querySelector('#loginForm')||document.querySelector('#registerForm');if(!form) return;form.addEventListener('submit',(e)=>{e.preventDefault();alert('This is a prototype — form submit intercepted.');});});

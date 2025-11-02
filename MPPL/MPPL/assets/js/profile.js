@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const form=document.getElementById('profileForm');if(!form) return;form.addEventListener('submit',e=>{e.preventDefault();alert('Profile saved (prototype).');});});

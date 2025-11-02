@@ -1,0 +1,1 @@
+function scoreMatch(candidateSkills, jobSkills){const a=new Set(candidateSkills.map(s=>s.toLowerCase()));const b=new Set(jobSkills.map(s=>s.toLowerCase()));let common=0;a.forEach(x=>{ if(b.has(x)) common++; });const score=Math.round((common / Math.max(a.size,b.size))*100);return score;}
