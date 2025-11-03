@@ -8,28 +8,248 @@
   <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <img src="assets/img/logo/matchhire.png" alt="MatchHire Logo" class="logo">
-      <ul>
-        <li><a href="index.html" class="active">Beranda</a></li>
-        <li><a href="about.html">Tentang</a></li>
-        <li><a href="contact.html">Kontak</a></li>
-        <li><a href="login.html" class="btn">Masuk</a></li>
-      </ul>
-    </nav>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-left">
+          <img src="assets/images/logo_matchhire.png" alt="MatchHire" class="logo">
+        </div>
+        <ul class="nav-links">
+          <li><a href="employer/dashboard.html">Dashboard</a></li>
+          <li><a href="job-seeker/search-jobs.html" class="active">Cari Loker</a></li>
+          <li><a href="job-seeker/application-status.html">Lamaran Saya</a></li>
+          <li><a href="job-seeker/dashboard.html">Tawaran Kerja</a></li>
+          <li><a href="job-seeker/search-jobs.html">Loker Disimpan</a></li>
+        </ul>
+        <div class="nav-right">
+          <a class="help-link" href="#" aria-label="Pusat bantuan"></a>
+          <div class="account">
+            <span class="avatar" aria-hidden="true"></span>
+            <span class="name">Haidar</span>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
-    <h1>Temukan <span>Pekerjaan</span> dan <span>Talenta Terbaik</span> dengan Mudah</h1>
-    <p>MatchHire membantu menghubungkan perusahaan dan pencari kerja dengan kecocokan optimal berbasis data.</p>
-    <div class="cta">
-      <a href="register.html" class="btn-primary">Mulai Sekarang</a>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1 class="hero-title">Kerja Cepat Kaya Cepat</h1>
+        <h2 class="hero-subtitle">Dengan MatchHire.com</h2>
+        <p class="hero-desc">Dapatkan pekerjaan cocok sesuai dengan profil Anda hari ini</p>
+        <form class="search" action="job-seeker/search-jobs.html">
+          <div class="search-row">
+            <input type="text" class="input" placeholder="Masukkan kata kunci" name="q">
+            <input type="text" class="input" placeholder="Cari lokasi" name="loc">
+            <input type="text" class="input" placeholder="Cari kategori" name="cat">
+            <button class="btn-search" type="submit">Cari Loker</button>
+          </div>
+        </form>
+        <div class="popular">
+          <strong class="popular-label">Paling sering dicari :</strong>
+          <div class="popular-links">
+            <a href="#">Administrasi</a>
+            <a href="#">Guru</a>
+            <a href="#">Driver</a>
+            <a href="#">IT Support</a>
+            <a href="#">Accounting Finance</a>
+            <a href="#">Content Creator</a>
+            <a href="#">Fresh Graduate</a>
+            <a href="#">Penjualan</a>
+            <a href="#">Konstruksi Bangunan</a>
+            <a href="#">Digital Marketing</a>
+            <a href="#">Desain Grafis</a>
+            <a href="#">Komunikasi Pemasaran</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <img src="assets/images/hero_keeping_in_touch.png" alt="Ilustrasi MatchHire">
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 MatchHire. Semua hak dilindungi.</p>
+  <section class="why">
+    <div class="container">
+      <h3 class="section-eyebrow">Mengapa mencari pekerjaan di MatchHire.com?</h3>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/images/card_study.png" alt="Lamar Satu Klik" class="card-img">
+          <h4 class="card-title">Lamar Satu Klik!</h4>
+          <p class="card-desc">Buat profil sesuai dengan dibutuhkan recruiter dan buat jadi CV 1x klik</p>
+        </article>
+        <article class="card">
+          <img src="assets/images/card_staying_home.png" alt="Notifikasi Terkemuka" class="card-img">
+          <h4 class="card-title">Easy To Use!</h4>
+          <p class="card-desc">Buat profil sesuai dengan dibutuhkan recruiter dan buat jadi CV 1x klik</p>
+        </article>
+        <article class="card">
+          <img src="assets/images/card_freelancing.png" alt="Skill Matching" class="card-img">
+          <h4 class="card-title">Skill Matching</h4>
+          <p class="card-desc">Buat profil sesuai dengan dibutuhkan recruiter dan buat jadi CV 1x klik</p>
+        </article>
+      </div>
+      <div class="cta-row">
+        <a href="register.html" class="btn-solid">dan masih banyak lagi</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands">
+    <div class="container brands-row">
+      <img src="assets/images/brand_11-10982b.png" alt="Brand" />
+      <img src="assets/images/brand_3-2e9990.png" alt="Brand" />
+      <img src="assets/images/brand_10-4552ff.png" alt="Brand" />
+      <img src="assets/images/brand_6-2467de.png" alt="Brand" />
+      <img src="assets/images/brand_8-10982b.png" alt="Brand" />
+    </div>
+    <div class="container center why-sub">
+      <p class="muted">Mudah Dapat Lowongan</p>
+      <p class="why-sub-2">Lebih dari 2025 Perusahaan Menanti Anda</p>
+    </div>
+  </section>
+
+  <section class="cta-signup">
+    <div class="container cta-signup__inner">
+      <p class="small-title">Tunggu apa lagi</p>
+      <h3 class="big-title">Daftar dan dapatkan pekerjaan Anda hari ini</h3>
+      <div class="cta-buttons">
+        <a class="btn-solid" href="register.html">Buat Akun</a>
+        <a class="btn-outline" href="employer/post-job.html">Apakah Anda Ingin Memasang Lowongan?</a>
+        <a class="btn-solid" href="#">Tes Bakat Minat</a>
+        <a class="btn-solid" href="#">Tes Gaya Komunikasi</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="employer-promo">
+    <div class="container promo-grid">
+      <div class="promo-visual">
+        <img src="assets/images/desk_background.png" alt="Promo Visual">
+      </div>
+      <div class="promo-copy">
+        <h3>Pasang Iklan Lowongan Kerja</h3>
+        <p class="promo-desc">Temukan talenta terbaik untuk perusahaan Anda melalui platform rekrutmen terpercaya yang digunakan oleh ribuan HR di seluruh Indonesia. Loker.id memudahkan Anda memasang lowongan kerja secara online, menjangkau jutaan kandidat potensial, dan menerima lamaran langsung di dashboard — cepat, efisien, dan tanpa ribet. Mulai rekrutmen cerdas Anda sekarang dan hemat lebih banyak waktu!</p>
+        <a href="employer/post-job.html" class="btn-solid">Pasang Lowongan Gratis</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <div class="container">
+      <div class="new-user-banner">
+        <div class="gift">🎁</div>
+        <div class="banner-copy">
+          <div class="banner-title">Khusus Pengguna Baru:</div>
+          <div class="banner-desc">Coba gratis pasang hingga 3 lowongan kerja selama 14 hari tanpa syarat. Mulai rekrut karyawan sekarang, 100% gratis!</div>
+        </div>
+        <a href="employer/post-job.html" class="btn-solid banner-btn">Coba Gratis Sekarang</a>
+      </div>
+      <h3 class="pricing-eyebrow">Pilih Paket yang Sesuai dengan Kebutuhan Rekrutmen Anda.</h3>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h4>Basic</h4>
+          <div class="price">Rp 149.000</div>
+          <ul>
+            <li>3 Bulan Masa Aktif</li>
+            <li>10 Job Posting Reguler</li>
+            <li>+1 Job Posting Premium</li>
+            <li>20 Job Invitation</li>
+            <li>Talent Search</li>
+            <li>Unlimited Job Applications</li>
+          </ul>
+          <a href="#" class="btn-outline">Coba Sekarang</a>
+        </article>
+        <article class="price-card">
+          <h4>Standard</h4>
+          <div class="price">Rp 249.000</div>
+          <ul>
+            <li>1 Bulan Masa Aktif</li>
+            <li>5 Job Posting Reguler</li>
+            <li>Job Posting Premium</li>
+            <li>Job Invitation</li>
+            <li>Talent Search</li>
+            <li>Unlimited Job Applications</li>
+          </ul>
+          <a href="#" class="btn-outline">Coba Sekarang</a>
+        </article>
+        <article class="price-card">
+          <h4>Medium</h4>
+          <div class="price">Rp 499.000</div>
+          <ul>
+            <li>6 Bulan Masa Aktif</li>
+            <li>20 Job Posting Reguler</li>
+            <li>+3 Job Posting Premium</li>
+            <li>50 Job Invitation</li>
+            <li>Talent Search</li>
+            <li>Unlimited Job Applications</li>
+          </ul>
+          <a href="#" class="btn-outline">Coba Sekarang</a>
+        </article>
+        <article class="price-card featured">
+          <h4>Profesional</h4>
+          <div class="price accent">Rp 999.000</div>
+          <ul>
+            <li>12 Bulan Masa Aktif</li>
+            <li>50 Job Posting Reguler</li>
+            <li>+7 Job Posting Premium</li>
+            <li>150 Job Invitation</li>
+            <li>Talent Search</li>
+            <li>Unlimited Job Applications</li>
+          </ul>
+          <a href="#" class="btn-solid">Coba Sekarang</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <img src="assets/images/logo_matchhire_white.png" alt="MatchHire" class="footer-logo">
+        <p class="footer-tag">Portal Lowongan Kerja Terkemuka</p>
+        <p class="footer-mail">@MatcHire.com</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h5>Tentang Kami</h5>
+          <a href="about.html">Tentang Kami</a>
+          <a href="contact.html">Kontak Kami</a>
+          <a href="register.html">Bergabung Bersama Kami</a>
+        </div>
+        <div>
+          <h5>Untuk Jobseeker</h5>
+          <a href="job-seeker/search-jobs.html">Lowongan</a>
+          <a href="employer/candidate-profile.html">Perusahaan</a>
+          <a href="job-seeker/application-status.html">Status Lamaran</a>
+          <a href="#">Lowongan disimpan</a>
+          <a href="#">Perusahaan disubscribe</a>
+          <a href="#">Rekomendasi Lowongan</a>
+          <a href="#">Sesuai Preferensi</a>
+          <a href="#">Test Kemampuan</a>
+          <a href="#">FAQ untuk Jobseeker</a>
+        </div>
+        <div>
+          <h5>Untuk Perusahaan</h5>
+          <a href="employer/post-job.html">Beriklan dengan kami</a>
+          <a href="#">FAQ untuk Perusahaan</a>
+          <a href="#">Bantuan</a>
+          <a href="#">Syarat dan Ketentuan</a>
+        </div>
+        <div>
+          <h5>Ikuti Kami</h5>
+          <div class="socials">
+            <img src="assets/images/instagram-56586a.png" alt="Instagram">
+            <img src="assets/images/facebook-56586a.png" alt="Facebook">
+            <img src="assets/images/twitter-56586a.png" alt="Twitter">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2005 - 2025 | PT Kebut Semalam</p>
+    </div>
   </footer>
 </body>
 </html>
