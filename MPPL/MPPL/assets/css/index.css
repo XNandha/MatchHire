@@ -33,6 +33,8 @@
   list-style: none;
   display: flex;
   gap: 24px;
+  margin-left: 24px;
+  margin-right: auto;
 }
 .nav-links a {
   color: var(--text);
@@ -40,8 +42,10 @@
   font-weight: 400;
 }
 .nav-links a.active { color: var(--brand); }
-.nav-right { display: flex; align-items: center; gap: 12px; }
-.help-link { width: 20px; height: 20px; display: inline-block; background: currentColor; mask: radial-gradient(circle at 50% 30%, transparent 30%, black 31%) center/100% 100% no-repeat; color: var(--text); }
+.nav-right { display: flex; align-items: center; gap: 16px; }
+.nav-right::before { content: ""; display: inline-block; width: 1px; height: 24px; background: var(--border); margin-left: 56px; margin-right: 16px; }
+.nav-right .nav-plain { color: var(--text); text-decoration: none; padding: 0; }
+.nav-right .nav-plain { color: var(--brand); }
 .account { display: inline-flex; align-items: center; gap: 8px; }
 .avatar { width: 32px; height: 32px; border-radius: 50%; background: #e5e7eb; display: inline-block; }
 .name { color: #000; font-weight: 400; }
