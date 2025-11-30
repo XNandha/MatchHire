@@ -1,1 +1,182 @@
-<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><title>Profile</title><link rel='stylesheet' href='../assets/css/global.css'></head><body><div class='container'><h2>Your Profile</h2><form id='profileForm'><label>Full name<input type='text' id='name'></label><label>Skills<input type='text' id='skills' placeholder='comma separated'></label><button class='btn' type='submit'>Save</button></form></div><script src='../assets/js/profile.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil - MatchHire.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-green-50 to-green-100 font-sans">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center bg-white shadow px-8 py-3">
+    <div class="flex items-center gap-2">
+      <img src="/assets/images/logo_matchhire.png" alt="logo" class="h-8">
+      <nav class="ml-6 space-x-6 text-gray-700 font-medium">
+        <a href="#" class="hover:text-green-600">Dashboard</a>
+        <a href="#" class="hover:text-green-600">Cari Loker</a>
+        <a href="#" class="hover:text-green-600">Lamaran Saya</a>
+        <a href="#" class="hover:text-green-600">Tawaran Kerja</a>
+        <a href="#" class="hover:text-green-600">Loker Disimpan</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <button class="text-gray-600 hover:text-green-600">
+        <i class="fa-regular fa-bell"></i>
+      </button>
+      <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user" class="w-8 h-8 rounded-full border">
+    </div>
+  </header>
+
+  <!-- Konten utama -->
+  <main class="flex px-10 py-6 gap-8">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow rounded-2xl p-5">
+      <div class="text-center mb-5">
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="w-20 h-20 rounded-full mx-auto">
+        <h2 class="font-semibold mt-3">Nama Lengkap</h2>
+        <p class="text-sm text-gray-500">Last update: 03 November 2025</p>
+        <button class="bg-green-600 text-white text-sm px-3 py-2 rounded-lg mt-3 hover:bg-green-700">
+          Edit Preferensi
+        </button>
+      </div>
+
+      <ul class="space-y-3 text-sm">
+        <li><a href="#" class="flex justify-between items-center text-green-600 font-semibold">📄 Biodata Diri*</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-green-600">💼 Pengalaman Kerja*</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-green-600">🎓 Pendidikan*</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-green-600">🧠 Skills</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-green-600">📎 CV*</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-green-600">🗣 Bahasa</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-green-600">🏅 Sertifikasi</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-green-600">🏢 Pengalaman Organisasi</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-green-600">📁 Profil Tambahan</a></li>
+      </ul>
+
+      <hr class="my-4">
+      <a href="#" class="block text-gray-500 hover:text-green-600 text-sm text-center">⚙️ Setting</a>
+    </aside>
+
+    <!-- Konten Profil -->
+    <section class="flex-1 space-y-5">
+      <!-- Progress Bar -->
+      <div class="bg-white shadow rounded-2xl p-5">
+        <div class="flex justify-between text-sm font-semibold mb-2">
+          <span class="text-green-600">Pemula</span>
+          <span class="text-gray-600">Medium</span>
+          <span class="text-gray-600">Profesional</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="flex-1 h-2 bg-green-500 rounded-full"></div>
+          <div class="flex-1 h-2 bg-gray-200 rounded-full"></div>
+          <div class="flex-1 h-2 bg-gray-200 rounded-full"></div>
+          <div class="flex-1 h-2 bg-gray-200 rounded-full"></div>
+          <div class="flex-1 h-2 bg-gray-200 rounded-full"></div>
+        </div>
+        <p class="text-gray-600 text-sm mt-3">
+          Tulis biodata diri agar HR kenal dan bisa menghubungi Anda.
+        </p>
+        <div class="mt-3 flex justify-between items-center">
+          <p class="text-sm text-gray-500">1/4 yang wajib diisi</p>
+          <button class="bg-green-600 text-white text-sm px-4 py-2 rounded-lg hover:bg-green-700">
+            Isi Personal Info
+          </button>
+        </div>
+      </div>
+
+      <!-- Biodata Diri -->
+      <div class="bg-white shadow rounded-2xl p-5">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="font-semibold text-lg">Biodata Diri</h3>
+          <button class="text-green-600 text-sm font-semibold hover:underline">Edit</button>
+        </div>
+        <div class="flex gap-5">
+          <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="w-24 h-24 rounded-full border">
+          <div>
+            <h4 class="font-semibold">Nama Lengkap</h4>
+            <p class="text-gray-600 text-sm">example@matchhire.com</p>
+            <div class="grid grid-cols-2 gap-y-2 text-sm text-gray-700 mt-3">
+              <p><strong>Alamat:</strong> -</p>
+              <p><strong>Jenis Kelamin:</strong> -</p>
+              <p><strong>Tanggal Lahir:</strong> -</p>
+              <p><strong>Ringkasan Profil:</strong> -</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+<footer class="bg-[#00A47E] text-white py-10 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+
+    <!-- Kolom Logo -->
+    <div>
+      <div class="flex items-center space-x-3">
+        <img src="/assets/images/logo_matchhire_white.png" alt="MatchHire Logo" class="w-24 md:w-32"> <!-- ukuran logo diperbesar -->
+        <div>
+          <p class="font-semibold text-lg">Portal Lowongan Kerja Terkemuka</p>
+          <p>@MatchHire.com</p>
+        </div>
+      </div>
+
+      <ul class="mt-5 space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+        <li><a href="#" class="hover:underline">Kontak Kami</a></li>
+        <li><a href="#" class="hover:underline">Bergabung Bersama Kami</a></li>
+      </ul>
+
+      <div class="mt-6">
+        <p class="font-semibold mb-2">Ikuti Kami</p>
+        <div class="flex space-x-4 text-2xl">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kolom Jobseeker -->
+    <div>
+      <h4 class="font-semibold mb-3">Untuk Jobseeker</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Lowongan</a></li>
+        <li><a href="#" class="hover:underline">Perusahaan</a></li>
+        <li><a href="#" class="hover:underline">Status Lamaran</a></li>
+        <li><a href="#" class="hover:underline">Lowongan Disimpan</a></li>
+        <li><a href="#" class="hover:underline">Perusahaan Disubscribe</a></li>
+        <li><a href="#" class="hover:underline">Rekomendasi Lowongan</a></li>
+        <li><a href="#" class="hover:underline">Sesuai Preferensi</a></li>
+        <li><a href="#" class="hover:underline">Tes Kemampuan</a></li>
+        <li><a href="#" class="hover:underline">FAQ untuk Jobseeker</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom Perusahaan -->
+    <div>
+      <h4 class="font-semibold mb-3">Untuk Perusahaan</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">Beriklan dengan Kami</a></li>
+        <li><a href="#" class="hover:underline">FAQ untuk Perusahaan</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom Bantuan -->
+    <div>
+      <h4 class="font-semibold mb-3">Bantuan</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline">MH Care</a></li>
+        <li><a href="#" class="hover:underline">Syarat dan Ketentuan</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center mt-10 text-xs">
+    © 2005 - 2025 | PT Kebut Semalam
+  </div>
+</footer>
+
+</body>
+</html>

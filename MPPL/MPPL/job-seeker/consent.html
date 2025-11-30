@@ -1,31 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Bersedia Dihubungi — MatchHire</title>
-  <link rel="stylesheet" href="../assets/css/global.css">
-  <link rel="stylesheet" href="../assets/css/consent.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bersedia dihubungi HR</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #e9f9f4, #d0f3e7);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 120px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 40px 30px;
+      width: 380px;
+      text-align: center;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .header a {
+      text-decoration: none;
+      color: #009e73;
+      font-weight: 600;
+    }
+
+    .illustration img {
+      width: 150px;
+      margin: 20px auto;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    p {
+      color: #777;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 0;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background-color: #00a67e;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #00936e;
+    }
+
+    .btn-secondary {
+      background: none;
+      color: #00a67e;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: 600;
+    }
+
+    .btn-secondary:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <main class="consent-page">
-    <div class="consent-card">
-      <div class="consent-card__top">
-        <button class="link link-back" type="button" onclick="history.back()">Kembali</button>
-        <a class="link" href="#">Bantuan</a>
-      </div>
+  <div class="logo">
+    <img src="/assets/images/logo_matchhire.png" alt="matchhire.com">
+  </div>
 
-      <div class="consent-art">
-        <img src="../assets/images/hero_keeping_in_touch.png" alt="Ilustrasi"/>
-      </div>
-
-      <h1 class="consent-title">Bersedia dihubungi HR melalui resume search?</h1>
-      <p class="consent-desc">Jika bersedia, HR dapat mencari dan menawarkan pekerjaan untuk Anda</p>
-
-      <button class="btn-primary btn-full" type="button" onclick="location.href='dashboard.html'">Bersedia</button>
-      <button class="btn-outline btn-full" type="button" onclick="location.href='dashboard.html'">Tidak Bersedia</button>
+  <div class="card">
+    <div class="header">
+      <a href="#">&larr; Kembali</a>
+      <a href="#">❓ Bantuan</a>
     </div>
-  </main>
+
+    <div class="illustration">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920320.png" alt="Ilustrasi">
+    </div>
+
+    <h2>Bersedia dihubungi HR melalui resume search?</h2>
+    <p>Jika bersedia, HR dapat mencari dan menawarkan pekerjaan untuk Anda</p>
+
+    <button class="btn btn-primary" onclick="alert('Anda memilih: Bersedia')">Bersedia</button>
+    <a href="#" class="btn-secondary" onclick="alert('Anda memilih: Tidak Bersedia')">Tidak Bersedia</a>
+  </div>
 </body>
 </html>
-

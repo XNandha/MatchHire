@@ -1,1 +1,247 @@
-<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><title>Job Seeker Dashboard</title><link rel='stylesheet' href='../assets/css/global.css'></head><body><div class='container'><h2>Job Seeker Dashboard</h2><section id='recommendations'></section></div><script src='../assets/js/dashboard.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MatchHire.com - Portal Lowongan Kerja</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- =========================== HEADER =========================== -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="/assets/images/logo_matchhire.png" class="w-12">
+      </div>
+
+      <!-- Menu -->
+      <nav class="hidden md:flex space-x-6 text-sm font-medium">
+        <a href="#" class="hover:text-[#00A47E]">Home</a>
+        <a href="#" class="hover:text-[#00A47E]">Lowongan Baru</a>
+        <a href="#" class="hover:text-[#00A47E]">Perusahaan</a>
+        <a href="#" class="hover:text-[#00A47E]">Tes Kemampuan</a>
+        <a href="#" class="hover:text-[#00A47E]">Loker Disimpan</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <i class="fa-regular fa-bell text-xl text-gray-600"></i>
+        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="w-9 h-9 rounded-full border">
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="bg-[#E3F6EE] py-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6 items-center">
+
+      <div>
+        <h1 class="text-4xl font-bold text-[#00A47E] leading-tight mb-4">
+          Kerja Cepat Kaya Cepat<br>
+          Dengan MatchHire.com
+        </h1>
+
+        <p class="text-gray-700 mb-6">
+          Dapatkan pekerjaan cocok sesuai dengan profil Anda hari ini!
+        </p>
+
+        <!-- Search Box -->
+        <div class="bg-white shadow-lg rounded-xl p-5 space-y-4">
+
+          <div class="flex flex-col gap-4 md:flex-row">
+            <input type="text" placeholder="Masukan kata kunci"
+              class="border px-4 py-2 rounded-lg w-full">
+
+            <select class="border px-4 py-2 rounded-lg w-full md:w-1/3">
+              <option>Lokasi</option>
+              <option>Jakarta</option>
+              <option>Bandung</option>
+              <option>Surabaya</option>
+            </select>
+
+            <button class="bg-[#00A47E] text-white px-6 py-2 rounded-lg hover:bg-[#00906D]">
+              Cari
+            </button>
+          </div>
+
+          <p class="text-sm text-gray-600">
+            Paling banyak dicari:
+            <span class="text-[#00A47E] font-medium">Admin</span>,
+            <span class="text-[#00A47E] font-medium">Kasir</span>,
+            <span class="text-[#00A47E] font-medium">Sales</span>,
+            <span class="text-[#00A47E] font-medium">Export Import</span>
+          </p>
+
+        </div>
+      </div>
+
+      <!-- Hero Illustration -->
+      <div class="flex justify-center">
+        <img src="/assets/images/hero_keeping_in_touch.png" class="w-3/4 md:w-full">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== LOWONGAN TERPOPULER ==================== -->
+  <section class="max-w-7xl mx-auto px-6 py-12">
+
+    <h2 class="text-2xl font-bold mb-4">Lowongan Kerja Terpopuler</h2>
+
+    <!-- Tabs Kota -->
+    <div class="flex flex-wrap gap-2 mb-8 text-sm">
+
+      <button class="bg-[#00A47E] text-white px-4 py-1 rounded-full">Jakarta</button>
+      <button class="tab-btn">Bekasi</button>
+      <button class="tab-btn">Depok</button>
+      <button class="tab-btn">Bogor</button>
+      <button class="tab-btn">Tangerang</button>
+      <button class="tab-btn">Bandung</button>
+      <button class="tab-btn">Ngawi</button>
+      <button class="tab-btn">Surakarta</button>
+      <button class="tab-btn">Medan</button>
+      <button class="tab-btn">Semarang</button>
+
+    </div>
+
+    <!-- Grid Lowongan -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- CARD TEMPLATE (diulang sesuai gambar) -->
+      <div class="job-card">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="/assets/company1.png" class="w-12 h-12 rounded-full">
+          <div>
+            <p class="font-semibold">Mizuho Logistic</p>
+            <p class="text-sm text-gray-600">Staff Export</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mb-1">Kecamatan Gunung Putri, Bogor</p>
+        <p class="text-sm font-semibold text-[#00A47E]">Rp 3,5 – 5 Juta</p>
+      </div>
+
+      <div class="job-card">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="/assets/company2.png" class="w-12 h-12 rounded-full">
+          <div>
+            <p class="font-semibold">PT BPR Gunung Slamet</p>
+            <p class="text-sm text-gray-600">Admin Marketing</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mb-1">Kecamatan Tegal, Jawa Tengah</p>
+        <p class="text-sm font-semibold text-[#00A47E]">Rp 4 – 6 Juta</p>
+      </div>
+
+      <div class="job-card">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="/assets/company3.png" class="w-12 h-12 rounded-full">
+          <div>
+            <p class="font-semibold">PT Zegen Pratama</p>
+            <p class="text-sm text-gray-600">Staff Warehouse</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 mb-1">Kota Surabaya</p>
+        <p class="text-sm font-semibold text-[#00A47E]">Rp 3 – 4,5 Juta</p>
+      </div>
+
+      <!-- Tambahkan 9 kartu lain sesuai screenshot -->
+      <!-- (Sudah dipersiapkan ruang grid) -->
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="flex justify-center items-center gap-2 mt-10">
+
+      <button class="px-3 py-1 border rounded hover:bg-gray-100">&laquo;</button>
+
+      <button class="px-4 py-1 bg-[#00A47E] text-white rounded">1</button>
+      <button class="px-4 py-1 border rounded hover:bg-gray-100">2</button>
+      <button class="px-4 py-1 border rounded hover:bg-gray-100">3</button>
+      <button class="px-4 py-1 border rounded hover:bg-gray-100">4</button>
+
+      <button class="px-3 py-1 border rounded hover:bg-gray-100">&raquo;</button>
+
+    </div>
+
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="bg-[#00A47E] text-white pt-14 pb-8 px-6">
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+
+      <div>
+        <img src="/assets/images/logo_matchhire_white.png" class="w-40 mb-5">
+        <p class="text-sm leading-relaxed">
+          Portal Lowongan Kerja Terkemuka<br>
+          @MatchHire.com
+        </p>
+
+        <ul class="mt-5 space-y-2 text-sm">
+          <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+          <li><a href="#" class="hover:underline">Kontak Kami</a></li>
+          <li><a href="#" class="hover:underline">Bergabung Bersama Kami</a></li>
+        </ul>
+
+        <p class="mt-6 mb-2 font-medium">Ikuti Kami</p>
+        <div class="flex gap-4 text-xl">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-3">Untuk Jobseeker</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#">Lowongan</a></li>
+          <li><a href="#">Perusahaan</a></li>
+          <li><a href="#">Status Lamaran</a></li>
+          <li><a href="#">Lowongan Disimpan</a></li>
+          <li><a href="#">Rekomendasi</a></li>
+          <li><a href="#">Tes Kemampuan</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-3">Untuk Perusahaan</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#">Beriklan Dengan Kami</a></li>
+          <li><a href="#">FAQ Perusahaan</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-3">Bantuan</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#">MH Care</a></li>
+          <li><a href="#">Syarat & Ketentuan</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="text-center mt-12 text-xs">
+      © 2005 - 2025 | PT Kebut Semalam
+    </p>
+
+  </footer>
+
+  <!-- STYLES (Tailwind custom classes) -->
+  <style>
+    .tab-btn {
+      @apply bg-gray-100 hover:bg-[#00A47E]/20 hover:text-[#00A47E] px-4 py-1 rounded-full;
+    }
+
+    .job-card {
+      @apply bg-white rounded-xl shadow p-5 border border-gray-100 hover:shadow-lg transition;
+    }
+  </style>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* === Gaya Halaman Onboarding === */
+
+body {
+  background: linear-gradient(to bottom, #f5fdf9 0%, #d4f2e4 100%);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Struktur utama */
+.onboard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logo img {
+  width: 160px; /* diperbesar */
+  height: auto;
+}
+
+.logo-text {
+  color: #00a76f;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Kartu utama */
+.onboard-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.onboard-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Link navigasi */
+.link {
+  color: #00a76f;
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Ilustrasi */
+.onboard-art img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Teks */
+.onboard-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.onboard-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.onboard-question {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Pilihan pengalaman */
+.onboard-choices {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 25px;
+}
+
+/* --- versi tanpa kotak --- */
+.choice.no-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #00a76f;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.choice.no-box img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+}
+
+.choice.no-box:hover {
+  color: #007f56;
+  transform: scale(1.05);
+}
+
+/* Tombol Lewati */
+.btn-outline {
+  background: transparent;
+  border: 2px solid #00a76f;
+  border-radius: 8px;
+  padding: 10px 24px;
+  color: #00a76f;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-outline:hover {
+  background-color: #00a76f;
+  color: white;
+}
